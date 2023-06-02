@@ -32,8 +32,8 @@ export function Video(props: VideoProps) {
   return (
     <div className="flex-1">
       {/* <p>{props.key}</p> */}
-      <div className="bg-black flex justify-center  ">
-        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video ">
+      <div className="bg-black flex justify-center ">
+        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video   ">
           <Player>
             <Youtube videoId={data.lesson.videoId} />
             <DefaultUi />
@@ -41,8 +41,8 @@ export function Video(props: VideoProps) {
         </div>
       </div>
 
-      <div className="p-8 max-w-[1100px] mx-auto  ">
-        <div className="flex items-start gap-16">
+      <div className="p-8 max-w-[1100px] mx-auto bg-gray-900  ">
+        <div className="flex items-start gap-16 max-sm:flex max-sm:flex-col  max-sm:items-center ">
           <div className="flex-1  ">
             <h1 className="text-2xl font-bold">{data.lesson.title}</h1>
             <p className="mt-4 text-gray-200  leading-relaxed">
@@ -86,22 +86,22 @@ export function Video(props: VideoProps) {
             </a>
           </div>
         </div>
-        <div className="gap-8 mt-20 grid grid-cols-2 ">
+        <div className="gap-8 mt-20 grid grid-cols-2 max-sm:flex max-sm:flex-col  max-sm:items-center max-sm:center ">
           <a
             href=""
-            className=" bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
+            className=" bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors max-sm:items-center 
+            max-sm:h-[9.4375rem] "
           >
-            <div className="bg-green-700 h-full p-6 flex items-center ">
+            <div className="bg-green-700 h-full p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed ">
-              <strong className="text-2xl block font-bold  ">
+              <strong className="text-2xl block font-bold max-sm:text-lg  ">
                 Material complementar{" "}
               </strong>
-              <p className=" text-sm text-gray-200 mt-2  ">
-                {" "}
+              <p className=" text-sm text-gray-200 mt-2 max-sm:text-xs ">
                 Acesse o material complementar para acelerar o seu
-                desenvolvimento{" "}
+                desenvolvimento
               </p>
             </div>
             <div className="h-full p-6 flex items-center">
@@ -111,21 +111,22 @@ export function Video(props: VideoProps) {
           </a>
           <a
             href=""
-            className=" bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
+            className=" bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 
+            transition-colors max-sm:items-center max-sm:h-[9.4375rem] "
           >
-            <div className="bg-green-700 h-full p-6 flex items-center ">
+            <div className="bg-green-700 h-full p-6 flex items-center  ">
               <Image size={40} />
             </div>
             <div className="py-6 leading-relaxed ">
-              <strong className="text-2xl block font-bold  ">
+              <strong className="text-2xl block font-bold  max-sm:text-lg ">
                 Wallpapers exclusivos{" "}
               </strong>
-              <p className=" text-sm text-gray-200 mt-2  ">
+              <p className=" text-sm text-gray-200 mt-2 max-sm:text-xs   ">
                 Baixe wallpapers exclusivos do Ignite Lab e personalize a sua
                 máquina
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-6 flex items-center  ">
               {" "}
               <CaretRight size={24} />{" "}
             </div>
