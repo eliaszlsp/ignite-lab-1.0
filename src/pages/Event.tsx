@@ -8,7 +8,7 @@ export function Event() {
   const { slug } = useParams<{ slug: string }>();
   return (
     <>
-      <div className="sm:flex sm:flex-col min-h-screen max-sm:hidden">
+      <div className="md:flex md:flex-col min-h-screen max-md:hidden">
         <Header />
         <main className="flex flex-1 ">
           {slug ? (
@@ -19,7 +19,7 @@ export function Event() {
           <Sidebar />
         </main>
       </div>
-      <div className="sm:hidden  overflow-x-hidden  ">
+      <div className="md:hidden max-sm:w-fit  ">
         <Menu />
       </div>
     </>
